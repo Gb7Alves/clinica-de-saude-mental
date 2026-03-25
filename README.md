@@ -91,7 +91,7 @@ LinkedIn: LINK_LINKEDIN
 
 ```bash
 # Clone o projeto
-git clone https://github.com/Gb7Alves/clinica-saude-mental.git
+git clone https://github.com/Gb7Alves/clinica-de-saude-mental.git
 
 # Entre na pasta do projeto
 cd clinica-saude-mental/clinica-projeto
@@ -110,79 +110,6 @@ http://127.0.0.1:5000
 
 ---
 
-## 📂 Estrutura do Projeto
-
-```
-clinica-projeto/
-├── app/
-│   ├── __init__.py              # Inicialização da aplicação Flask
-│   ├── models.py                # Modelos de dados (ORM)
-│   ├── routes.py                # Rotas e lógica de negócio
-│   ├── static/
-│   │   ├── img/                 # Imagens (logótipo, fundo de login)
-│   │   └── js/
-│   │       └── masks.js         # Máscaras de entrada (CPF, telefone)
-│   └── templates/
-│       ├── base.html            # Template base
-│       ├── login.html           # Página de login
-│       ├── register.html        # Página de registo
-│       ├── index.html           # Dashboard principal
-│       ├── pacientes/           # Templates de pacientes
-│       ├── profissionais/       # Templates de profissionais
-│       ├── consultas/           # Templates de consultas
-│       ├── agendamentos/        # Templates de agendamentos
-│       └── acessos/             # Templates de gerenciamento de acessos
-├── clinica.db                   # Base de dados SQLite
-├── migrate_db.py                # Script de migração de base de dados
-├── requirements.txt             # Dependências do projeto
-├── run.py                       # Ficheiro principal para executar
-└── README.md                    # Este ficheiro
-```
-
----
-
-## 📋 Modelos de Dados
-
-### Paciente
-- ID, Nome, CPF, Data de Nascimento, Telefone, Email
-- Endereço, Histórico Médico, Estado Civil
-- Contacto de Emergência
-
-### Profissional
-- ID, Nome, CPF, Especialidade, Especialidade Customizada
-- Consultório Responsável, Telefone, Email
-- Número de Registo, Estado Civil, Endereço
-- Contacto de Emergência
-
-### Consultório
-- ID, Sala (identificador único), Descrição
-
-### Agendamento
-- ID, Paciente, Profissional, Consultório
-- Data do Agendamento, Hora de Início, Hora de Término
-- Status (Agendado, Realizado, Cancelado, Reagendado, Não Compareceu)
-- Observações
-
-### Consulta
-- ID, Paciente, Profissional, Consultório
-- Data da Consulta, Diagnóstico, Prescrição
-- Observações, Data de Registo
-
-### Utilizador
-- ID, Nome, Email, Palavra-passe (hash), Profissional Vinculado
-- Status (Ativo/Inativo), Data de Criação
-
----
-
-## 🔐 Segurança
-
-- **Autenticação**: Sistema de login com verificação de credenciais
-- **Hash de Palavra-passe**: Palavras-passe armazenadas com hash seguro (werkzeug.security)
-- **Proteção de Rotas**: Rotas protegidas com `@login_required`
-- **Validação de Dados**: Validação de CPF, email e outros campos
-
----
-
 ## 📞 Suporte
 
 Para dúvidas ou problemas, entre em contacto com os integrantes do projeto através dos links do GitHub.
@@ -195,4 +122,4 @@ Este projeto é de uso académico e pode ser modificado livremente para fins edu
 
 ---
 
-**Desenvolvido para a Clínica de Saúde Mental**
+**Desenvolvido como projeto acadêmico para uma Clínica de Saúde Mental**
