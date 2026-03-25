@@ -107,38 +107,6 @@ http://127.0.0.1:5000
 
 # Para parar o sistema pressione CTRL + C
 ```
-
----
-
-## 📂 Estrutura do Projeto
-
-```
-clinica-projeto/
-├── app/
-│   ├── __init__.py              # Inicialização da aplicação Flask
-│   ├── models.py                # Modelos de dados (ORM)
-│   ├── routes.py                # Rotas e lógica de negócio
-│   ├── static/
-│   │   ├── img/                 # Imagens (logótipo, fundo de login)
-│   │   └── js/
-│   │       └── masks.js         # Máscaras de entrada (CPF, telefone)
-│   └── templates/
-│       ├── base.html            # Template base
-│       ├── login.html           # Página de login
-│       ├── register.html        # Página de registo
-│       ├── index.html           # Dashboard principal
-│       ├── pacientes/           # Templates de pacientes
-│       ├── profissionais/       # Templates de profissionais
-│       ├── consultas/           # Templates de consultas
-│       ├── agendamentos/        # Templates de agendamentos
-│       └── acessos/             # Templates de gerenciamento de acessos
-├── clinica.db                   # Base de dados SQLite
-├── migrate_db.py                # Script de migração de base de dados
-├── requirements.txt             # Dependências do projeto
-├── run.py                       # Ficheiro principal para executar
-└── README.md                    # Este ficheiro
-```
-
 ---
 
 ## 📋 Modelos de Dados
