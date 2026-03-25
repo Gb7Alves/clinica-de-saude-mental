@@ -1,0 +1,17 @@
+=== ACESSOS DOS PROFISSIONAIS ===
+
+Nome Completo: Carlos Henrique Souza
+Email: suporte@clinica.com
+Senha: admin123
+
+----------------------------------
+
+Nome Completo: Dra. Fernanda Oliveira Costa
+Email: fernanda.costa@clinica.com
+Senha: fernanda123
+
+----------------------------------
+
+Nome Completo: Dr. João Carlos Silva
+Email: joao.silva@clinica.com
+Senha: joao123
