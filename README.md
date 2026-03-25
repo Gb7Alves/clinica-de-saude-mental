@@ -110,6 +110,48 @@ http://127.0.0.1:5000
 
 ---
 
+## 📋 Modelos de Dados
+
+### Paciente
+- ID, Nome, CPF, Data de Nascimento, Telefone, Email
+- Endereço, Histórico Médico, Estado Civil
+- Contacto de Emergência
+
+### Profissional
+- ID, Nome, CPF, Especialidade, Especialidade Customizada
+- Consultório Responsável, Telefone, Email
+- Número de Registo, Estado Civil, Endereço
+- Contacto de Emergência
+
+### Consultório
+- ID, Sala (identificador único), Descrição
+
+### Agendamento
+- ID, Paciente, Profissional, Consultório
+- Data do Agendamento, Hora de Início, Hora de Término
+- Status (Agendado, Realizado, Cancelado, Reagendado, Não Compareceu)
+- Observações
+
+### Consulta
+- ID, Paciente, Profissional, Consultório
+- Data da Consulta, Diagnóstico, Prescrição
+- Observações, Data de Registo
+
+### Utilizador
+- ID, Nome, Email, Palavra-passe (hash), Profissional Vinculado
+- Status (Ativo/Inativo), Data de Criação
+
+---
+
+## 🔐 Segurança
+
+- **Autenticação**: Sistema de login com verificação de credenciais
+- **Hash de Palavra-passe**: Palavras-passe armazenadas com hash seguro (werkzeug.security)
+- **Proteção de Rotas**: Rotas protegidas com `@login_required`
+- **Validação de Dados**: Validação de CPF, email e outros campos
+
+---
+
 ## 📞 Suporte
 
 Para dúvidas ou problemas, entre em contacto com os integrantes do projeto através dos links do GitHub.
