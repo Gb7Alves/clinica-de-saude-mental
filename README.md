@@ -1,125 +1,112 @@
 # 🏥 Sistema de Gestão de Clínica de Saúde Mental
 
-[![Python](https://img.shields.io/badge/Python-3.x-blue)](https://www.python.org/)  
-[![Flask](https://img.shields.io/badge/Flask-Framework-black)](https://flask.palletsprojects.com/)  
-[![SQLite](https://img.shields.io/badge/SQLite-Database-lightgrey)](https://www.sqlite.org/)  
+Sistema web desenvolvido em grupo com o objetivo de auxiliar no gerenciamento de uma clínica de saúde mental.
 
-Sistema desenvolvido em **Python** utilizando **Flask** e **SQLite**, com o objetivo de gerenciar pacientes, profissionais, consultas e agendamentos de uma clínica de saúde mental.
+A aplicação permite organizar informações de pacientes, profissionais, consultas, agendamentos e usuários em um único sistema.
 
----
+## 📚 Sobre o projeto
 
-## 📚 Sobre o Projeto
+Este projeto foi desenvolvido como atividade acadêmica para a disciplina de Programação para Dispositivos Móveis (Android). Durante o desenvolvimento, foram aplicados conhecimentos de programação, organização de rotas, integração com banco de dados, autenticação de usuários e construção de interfaces web.
 
-Este sistema foi desenvolvido como **projeto académico** para a disciplina de **Programação para Dispositivos Móveis (Android)**.
+## ✨ Funcionalidades
 
-O objetivo do projeto é aplicar conceitos de desenvolvimento de sistemas, organização de rotas, base de dados e interface web utilizando **Python, Flask e SQLite**.
+### 👥 Gerenciamento de dados
 
-O projeto foi desenvolvido em **grupo** como parte das atividades da faculdade.
+- 🧑‍⚕️ Cadastro de pacientes
+- 👩‍⚕️ Cadastro de profissionais
+- 📋 Registro de consultas
+- 📅 Agendamento de consultas
+- 🏢 Cadastro e organização de consultórios
+- 📞 Cadastro de informações de contato
 
----
+### 📆 Sistema de agendamento
 
-## 👨‍💻 Integrantes do Projeto
+- ⏰ Reserva de salas por horário
+- 🚫 Validação de conflitos de horários
+- 🔗 Preenchimento automático de informações relacionadas ao agendamento
+- 📝 Exibição de informações do agendamento na consulta
 
-```
-Gabriel Alves
-GitHub: https://github.com/Gb7Alves
-LinkedIn: https://www.linkedin.com/in/gabriel-alves-adm?utm_source=share_via&utm_content=profile&utm_medium=member_ios
+### 🔐 Controle de acesso
 
-Breno Araujo
-GitHub: https://github.com/Oniugen
-LinkedIn: https://www.linkedin.com/in/breno-araújo-ferreira-ab6232367?utm_source=share_via&utm_content=profile&utm_medium=member_ios
+- 👤 Cadastro e autenticação de usuários
+- 🔑 Controle de permissões
+- ✅ Aprovação de novos usuários pelo administrador
+- 🔗 Associação de usuários a profissionais
+- ✏️ Edição de nome e senha
+- 🗑️ Remoção de acessos
 
-Yann Gustavo
-GitHub: LINK_GITHUB
-LinkedIn: https://www.linkedin.com/in/yanngustavoap?utm_source=share_via&utm_content=profile&utm_medium=member_ios
+### 🎨 Interface e experiência do usuário
 
-Samuel Oliveira
-GitHub: LINK_GITHUB
-LinkedIn: LINK_LINKEDIN
-```
+- 📱 Interface responsiva
+- 🖼️ Tela de login com imagem de fundo
+- 🔍 Busca e filtragem de profissionais e usuários
+- 📐 Organização responsiva dos botões e elementos da interface
+- 📌 Rodapé fixo
 
----
+## 🛠️ Tecnologias utilizadas
 
-## 🌟 Funcionalidades
+### Backend
 
-### Gerenciamento de Dados
-- 🧑‍⚕️ **Cadastro de Pacientes**: Registo completo com dados pessoais, contacto de emergência e histórico médico
-- 👩‍⚕️ **Cadastro de Profissionais**: Registo de profissionais com especialidade, consultório responsável e dados de contacto
-- 📋 **Registo de Consultas**: Documentação de consultas realizadas com diagnóstico e prescrição
-- 📅 **Agendamento de Consultas**: Sistema avançado de agendamento com reserva de salas por horário
-- 🏢 **Gerenciamento de Consultórios**: Cadastro e organização de salas/consultórios
+- Python 3
+- Flask
+- SQLAlchemy
+- Flask-Login
 
-### Sistema de Agendamento Avançado
-- ⏰ **Reserva de Salas por Horário**: Agendamentos com faixa horária inicial e final
-- 🚫 **Validação de Conflitos**: Impede dupla reserva da mesma sala no mesmo horário
-- 🔗 **Preenchimento Automático**: Dados do agendamento são automaticamente preenchidos na consulta
-- 📝 **Campos Bloqueados**: Informações do agendamento aparecem como somente leitura na consulta
+### Banco de dados
 
-### Gerenciamento de Acessos
-- 👤 **Controlo de Utilizadores**: Sistema de login e autenticação
-- 🔐 **Edição de Perfil**: Utilizadores podem alterar nome e palavra-passe
-- ✅ **Aprovação de Utilizadores**: Administrador aprova novos utilizadores
-- 🔑 **Vinculação a Profissionais**: Utilizadores podem ser vinculados a profissionais específicos
-- 🗑️ **Remoção de Acessos**: Funcionalidade para remover utilizadores do sistema.
+- SQLite
 
-### Interface e UX
-- 🎨 **Design Responsivo**: Interface adaptável para diferentes tamanhos de ecrã
-- 🖼️ **Imagem de Fundo**: Ecrã de login com imagem profissional de clínica
-- 📱 **Layout Horizontal**: Botões de ações exibidos lado a lado (responsivo)
-- 🦶 **Rodapé Fixo**: Rodapé permanece no final da página mesmo com pouco conteúdo
-- 🔍 **Busca em Tempo Real**: Filtro de profissionais e utilizadores
+### Frontend
 
----
+- HTML5
+- CSS3
+- JavaScript
+- CSS Grid
+- Flexbox
 
-## 🛠 Tecnologias
+## 🔐 Acesso para demonstração
 
-- **Backend**: Python 3.x, Flask
-- **Base de Dados**: SQLite com SQLAlchemy ORM
-- **Frontend**: HTML5, CSS3, JavaScript
-- **Autenticação**: Flask-Login com hash de palavra-passe
-- **Responsividade**: CSS Grid e Flexbox
+As credenciais utilizadas no ambiente de desenvolvimento são fictícias e servem exclusivamente para testes acadêmicos. Elas não representam contas oficiais nem devem ser utilizadas em ambientes reais.
 
----
+## 📁 Estrutura principal do projeto
 
-## 🚀 Como Executar o Sistema
+- `app/` — Código principal da aplicação
+- `run.py` — Arquivo utilizado para iniciar o sistema
+- `migrate_db.py` — Script relacionado à atualização do banco de dados
+- `requirements.txt` — Lista de dependências do projeto
+- `render.yaml` — Configurações de implantação
 
-### Pré-requisitos
-- Python 3.x instalado
-- pip (gestor de pacotes Python)
+## 🎯 Objetivo do projeto
 
-### Instalação e Execução
+O objetivo deste projeto foi aplicar, na prática, conceitos de desenvolvimento de sistemas, criação de aplicações web, organização de rotas, gerenciamento de dados, autenticação de usuários e desenvolvimento de interfaces responsivas.
 
-```bash
-# Clone o projeto
-git clone https://github.com/Gb7Alves/clinica-de-saude-mental.git
+## 👥 Equipe do projeto
 
-# Entre na pasta do projeto
-cd clinica-saude-mental/clinica-projeto
+Projeto desenvolvido em grupo pelos seguintes integrantes:
 
-# Instale as dependências
-pip install -r requirements.txt
+### Gabriel Alves
 
-# Execute o sistema
-python run.py
+- [GitHub](https://github.com/Gb7Alves )
+- [LinkedIn](https://www.linkedin.com/in/gabriel-alves-adm )
 
-# Abra no navegador
-http://127.0.0.1:5000
+### Breno Araujo
 
-# Para parar o sistema pressione CTRL + C
-```
+- [GitHub](https://github.com/Oniugen )
+- [LinkedIn](https://www.linkedin.com/in/breno-araújo-ferreira-ab6232367 )
 
----
+### Yann Gustavo
 
-## 📞 Suporte
+- [LinkedIn](https://www.linkedin.com/in/yanngustavoap )
 
-Para dúvidas ou problemas, entre em contacto com os integrantes do projeto através dos links do GitHub.
+### Samuel Oliveira
 
----
+No momento, não foi informado um link público de GitHub ou LinkedIn.
+
+## 📞 Contato
+
+- [GitHub — Gabriel Alves](https://github.com/Gb7Alves )
+- [LinkedIn — Gabriel Alves](https://www.linkedin.com/in/gabriel-alves-adm )
 
 ## 📄 Licença
 
-Este projeto é de uso académico e pode ser modificado livremente para fins educacionais.
-
----
-
-**Desenvolvido como projeto acadêmico para uma Clínica de Saúde Mental**
+Este projeto foi desenvolvido para fins acadêmicos e educacionais. O código pode ser estudado e utilizado como referência para aprendizado.
